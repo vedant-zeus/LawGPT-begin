@@ -49,14 +49,14 @@ const ContactPage: React.FC = () => {
                   <Phone className="h-6 w-6 text-amber-700" />
                   <div>
                     <p className="font-semibold text-amber-800">Phone</p>
-                    <p className="text-amber-700">+1 (555) 123-4567</p>
+                    <p className="text-amber-700">+91 88888 12345 </p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="h-6 w-6 text-amber-700" />
                   <div>
                     <p className="font-semibold text-amber-800">Address</p>
-                    <p className="text-amber-700">123 Legal Street<br />San Francisco, CA 94105</p>
+                    <p className="text-amber-700">Courtyard Legal Road <br />Chennai , Tamil Nadu</p>
                   </div>
                 </div>
               </div>

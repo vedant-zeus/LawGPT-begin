@@ -1,0 +1,33 @@
+.gavel-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+  transition: transform 0.05s linear;
+  transform-origin: center center;
+}
+
+.gavel-cursor img {
+  transform-origin: top right; /* pivot point for swing motion */
+}
+
+/* 🔨 Swing animation when clicking */
+.gavel-cursor.clicking img {
+  animation: hammer-swing 0.4s ease-out;
+}
+
+@keyframes hammer-swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-60deg) translateY(2px);
+  }
+  60% {
+    transform: rotate(10deg) translateY(-1px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -8,6 +8,7 @@ import SignUpPage from './pages/SignUpPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import JargonSimplifierPage from './pages/JargonSimplifierPage';
+import GavelCursor from "./GavelCursor";
 
 // Define a type for the user data for type safety
 interface UserProfile {
@@ -53,8 +54,12 @@ function App() {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-screen bg-amber-50 relative">
+      {/* 👇 Add the gavel cursor here so it's visible globally */}
+      <GavelCursor />
+
       <Header user={user} setUser={setUser} />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/help" element={<HelpPage />} />

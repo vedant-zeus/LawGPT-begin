@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  cursor: none; /* hide default cursor */
+}
+* {
+  cursor: none !important;
+}
